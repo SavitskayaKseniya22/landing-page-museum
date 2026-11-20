@@ -78,8 +78,12 @@ React Router handles `/`, `/order`, and `/map/:name`. Opening an order or tour f
 opening its URL directly shows a standalone page. Unknown routes show a client-side not-found page.
 
 Static hosting requires an SPA fallback to `index.html` so direct links and page reloads work.
-The repository also includes a Vercel configuration in `vercel.json`.
 
 ### Screenshots
 
-![Museum landing page](https://raw.githubusercontent.com/SavitskayaKseniya22/projects-photos/main/photos/museum/screenshots/museum-1280px.png)
+<img width="1920" height="9211" alt="Screenshot 2026-11-20 at 21-35-01 Museum" src="https://github.com/user-attachments/assets/a1dfce38-47bf-4752-848d-c20838b5672b" />
+
+
+
+
+
