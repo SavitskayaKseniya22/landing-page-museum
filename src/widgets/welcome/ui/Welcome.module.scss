@@ -1,0 +1,38 @@
+@use "@/shared/styles/variables.scss" as *;
+
+.welcome {
+  background-color: black;
+}
+
+.welcome__container {
+  position: relative;
+
+  @media (width <= 1920px) {
+    padding: 0 20px;
+  }
+}
+
+.welcome__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 842px;
+
+  @media (width <= 1919px) {
+    height: 585px;
+  }
+
+  @media (width <= 1023px) {
+    flex-direction: column;
+    gap: 50px;
+    height: 861px;
+  }
+
+  @media (width <= 767px) {
+    height: 544px;
+  }
+
+  @media (width <= 419px) {
+    height: 480px;
+  }
+}

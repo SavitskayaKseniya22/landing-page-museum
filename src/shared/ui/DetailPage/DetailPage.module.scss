@@ -1,0 +1,25 @@
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.detail-page__content {
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.detail-page__back-link {
+  position: relative;
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+}

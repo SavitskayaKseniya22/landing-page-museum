@@ -1,0 +1,75 @@
+.comparison {
+  position: relative;
+  flex-shrink: 0;
+  width: 720px;
+  height: 700px;
+  overflow: hidden;
+
+  @media (width <= 1919px) {
+    align-self: center;
+  }
+
+  @media (width <= 767px) {
+    width: 380px;
+    height: 368px;
+  }
+
+  @media (width <= 419px) {
+    width: 280px;
+    height: 280px;
+  }
+
+  .comparison__before-image,
+  .comparison__after-image {
+    img {
+      object-fit: cover;
+    }
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .comparison__before-image {
+    left: 0;
+    z-index: 12;
+    width: 100%;
+  }
+
+  .comparison__after-image {
+    right: 0;
+    z-index: 11;
+    width: 100%;
+  }
+
+  .comparison__handle {
+    position: absolute;
+    top: 0;
+    z-index: 14;
+    width: 40px;
+    height: 100%;
+    pointer-events: none;
+    cursor: ew-resize;
+    transform: translateX(-50%);
+  }
+}
+
+.comparison__range {
+  position: absolute;
+  inset: 0;
+  z-index: 15;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  touch-action: pan-y;
+  cursor: ew-resize;
+  opacity: 0;
+}
+
+.comparison:focus-within {
+  outline: 3px solid #9d8665;
+  outline-offset: 4px;
+}

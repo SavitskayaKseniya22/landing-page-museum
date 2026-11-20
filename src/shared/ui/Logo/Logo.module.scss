@@ -1,0 +1,34 @@
+@use "@/shared/styles/variables.scss" as *;
+
+.logo {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+
+  .logo__title {
+    margin: 0;
+    font-family: $title-font-family;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    color: $white-color;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    @media (width <= 767px) {
+      font-size: 16px;
+    }
+  }
+
+  .logo__image {
+    width: 49px;
+    height: 26px;
+
+    @media (width <= 767px) {
+      width: 29px;
+      height: 16px;
+    }
+  }
+}

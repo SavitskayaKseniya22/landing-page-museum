@@ -1,0 +1,52 @@
+@use "@/shared/styles/variables.scss" as *;
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+
+  @media (width <= 1919px) {
+    padding: 50px 0;
+  }
+
+  @media (width <= 1023px) {
+    padding: 35px 0;
+  }
+
+  .site-header__navigation {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+    justify-content: center;
+
+    @media (width <= 1919px) {
+      display: none;
+    }
+  }
+
+  .site-header__menu-toggle {
+    display: none;
+
+    @media (width <= 1919px) {
+      display: block;
+      width: 32px;
+      height: 20px;
+      cursor: pointer;
+      background: linear-gradient(to bottom, white 10%, black 10% 45%, white 45% 55%, black 55% 90%, white 90%);
+      border: none;
+      transition: 1s;
+
+      &.site-header__menu-toggle--expanded {
+        transform: rotate(90deg);
+        transition: 1s;
+      }
+    }
+  }
+}
+
+.site-header__nav-region {
+  @media (width <= 1919px) {
+    display: none;
+  }
+}

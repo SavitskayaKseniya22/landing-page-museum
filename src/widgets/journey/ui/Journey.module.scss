@@ -1,0 +1,44 @@
+@use "@/shared/styles/variables.scss" as *;
+
+.journey__container {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+  align-items: center;
+  padding: 75px 0;
+
+  @media (width <= 1919px) {
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  @media (width <= 1023px) {
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  @media (width <= 767px) {
+    padding: 36px 20px 40px;
+  }
+}
+
+.journey__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media (width <= 1919px) {
+    h2 {
+      align-self: flex-start;
+    }
+  }
+}
+
+.journey__description {
+  font-size: 22px;
+  line-height: 38px;
+
+  @media (width <= 1919px) {
+    display: none;
+  }
+}

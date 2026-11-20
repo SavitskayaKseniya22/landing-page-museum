@@ -1,0 +1,54 @@
+@use "@/shared/styles/variables.scss" as *;
+
+.explore {
+  background-color: $black-color;
+}
+
+.explore__container {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  padding: 75px 20px;
+
+  @media (width <= 1919px) {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  @media (width <= 1023px) {
+    gap: 40px;
+    padding: 40px 20px;
+  }
+}
+
+.explore__content {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+
+  @media (width <= 1919px) {
+    gap: 60px;
+  }
+}
+
+.explore__description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 22px;
+  line-height: 38px;
+  color: white;
+
+  @media (width <= 1919px) {
+    gap: 0;
+    font-size: 20px;
+  }
+
+  @media (width <= 1023px) {
+    display: none;
+  }
+}
+
+.explore__highlight {
+  color: $gold-color;
+}

@@ -1,0 +1,17 @@
+.parallax {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  background-image: url("/img/img-parallax.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  @media (width <= 768px) {
+    height: 300px;
+  }
+}
+
+.parallax__image {
+  z-index: -2;
+}

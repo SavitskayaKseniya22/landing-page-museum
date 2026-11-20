@@ -1,0 +1,115 @@
+.video-playlist {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 1440px;
+  overflow: hidden;
+
+  @media (width <= 1919px) {
+    width: 984px;
+  }
+
+  @media (width <= 1023px) {
+    gap: 20px;
+    width: 728px;
+  }
+
+  @media (width <= 767px) {
+    gap: 40px;
+    width: 380px;
+  }
+
+  @media (width <= 419px) {
+    width: 280px;
+  }
+}
+
+.video-playlist__viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  @media (width <= 419px) {
+    width: 280px;
+  }
+}
+
+.video-playlist__item {
+  button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  position: relative;
+  flex-shrink: 0;
+  height: 254px;
+  cursor: pointer;
+  background-color: rgb(86 92 90);
+  opacity: 0.6;
+
+  @media (width <= 1919px) {
+    height: 170px;
+  }
+
+  @media (width <= 1023px) {
+    height: 200px;
+  }
+
+  @media (width <= 767px) {
+    height: 100px;
+  }
+
+  &.video-playlist__item--active {
+    opacity: 1;
+  }
+
+  .video-playlist__play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.6;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+
+  &:hover {
+    .video-playlist__play-icon {
+      opacity: 1;
+    }
+  }
+}
+
+.video-playlist__controls {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+    &:disabled {
+      pointer-events: none;
+      opacity: 0.2;
+    }
+  }
+
+  @media (width <= 1023px) {
+    gap: 30px;
+  }
+
+  @media (width <= 767px) {
+    gap: 20px;
+  }
+}
